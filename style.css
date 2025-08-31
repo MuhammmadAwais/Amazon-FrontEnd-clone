@@ -1,0 +1,51 @@
+body {
+  font-family: "Inter", sans-serif;
+  background-color: #e3e6e6;
+}
+.amazon-nav {
+  background-color: #131921;
+}
+.amazon-nav-secondary {
+  background-color: #232f3e;
+}
+.search-bar:focus-within {
+  box-shadow: 0 0 0 3px #f90, 0 0 0 5px #ffc166;
+  border-color: #f90;
+}
+.page {
+  display: none; /* Hide all pages by default */
+}
+.page.active {
+  display: block; /* Show active page */
+}
+.product-card {
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+.comment-section {
+  max-height: 400px;
+  overflow-y: auto;
+}
+/* Custom scrollbar for a better look */
+.comment-section::-webkit-scrollbar,
+.cart-items::-webkit-scrollbar {
+  width: 8px;
+}
+.comment-section::-webkit-scrollbar-track,
+.cart-items::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+.comment-section::-webkit-scrollbar-thumb,
+.cart-items::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+.comment-section::-webkit-scrollbar-thumb:hover,
+.cart-items::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
